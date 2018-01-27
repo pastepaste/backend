@@ -1,6 +1,6 @@
 {
-  "name": "apex_terraform_golang_dev",
-  "runtime": "golang",
+  "name": "pastepaste_api",
+  "profile": "us-east-1",
   "memory": 128,
   "timeout": 5
 }
