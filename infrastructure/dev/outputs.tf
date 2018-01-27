@@ -1,11 +1,7 @@
-output "lambda_hello_role_arn" {
-  value = "${module.iam.lambda_hello_arn}"
+output "lambda_api_role_arn" {
+  value = "${module.iam.lambda_api_arn}"
 }
 
-output "apigw_hello_endpoint" {
-  value = "${module.apigw.hello_endpoint}"
-}
-
-output "dynamodb_counter_name" {
-  value = "${module.dynamodb.counter_name}"
+output "apigw_api_endpoint" {
+  value = "${module.apigw.api_endpoint}"
 }

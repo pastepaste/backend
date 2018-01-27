@@ -1,3 +1,3 @@
-output "lambda_hello_arn" {
-  value = "${module.lambda_hello.arn}"
+output "lambda_api_arn" {
+  value = "${module.lambda_api.arn}"
 }

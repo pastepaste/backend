@@ -1,14 +1,13 @@
-module "lambda_hello" {
+module "lambda_api" {
   source = "role"
 
-  name = "${var.name}_lambda_hello"
+  name = "${var.name}_lambda_api"
 
   principal = "lambda.amazonaws.com"
 
-  policy_arns_count = 2
+  policy_arns_count = 1
 
   policy_arns = [
     "${aws_iam_policy.create_put_cw_logs.arn}",
-    "${aws_iam_policy.scan_put_item_dynamodb.arn}",
   ]
 }

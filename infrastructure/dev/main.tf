@@ -14,7 +14,7 @@ module "apigw" {
   name = "${var.name}_${var.apex_environment}"
   env  = "${var.apex_environment}"
 
-  hello_arn = "${var.apex_function_hello}"
+  api_arn = "${var.apex_function_api}"
 }
 
 module "dynamodb" {
