@@ -3,13 +3,13 @@ package handler
 import (
 	"net/http"
 
-	"github.com/pastepaste/api/model"
+	"github.com/pastepaste/backend/service"
 	"github.com/sirupsen/logrus"
 )
 
 // Pastes handles requests to the paste resource.
 type Pastes struct {
-	DB  model.DB
+	DB  service.DB
 	Log logrus.FieldLogger
 }
 
